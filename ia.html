@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Imobiliária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" width="60" alt="Logo">
+        <h1>Plataforma Controle Imobiliária</h1>
+        <p>Alugue o imóvel perfeito para você</p>
+    </header>
+
+    <section class="filtro">
+        <h2>Filtros</h2>
+        <label>Tipo de Imóvel: <input type="text" id="filtroTipo"></label>
+        <label>Área construída mínima: <input type="number" id="areaMin"></label>
+        <label>Área construída máxima: <input type="number" id="areaMax"></label>
+        <label>Cidade: <input type="text" id="filtroCidade"></label>
+        <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+    </section>
+
+    <section class="adicionar">
+        <h2>Adicionar Imóvel</h2>
+        <input placeholder="Tipo" id="tipo">
+        <input placeholder="Área Construída" type="number" id="areaConstruida">
+        <input placeholder="Área Total" type="number" id="areaTotal">
+        <input placeholder="Logradouro" id="logradouro">
+        <input placeholder="Bairro" id="bairro">
+        <input placeholder="Cidade" id="cidade">
+        <input placeholder="CEP" id="cep">
+        <button onclick="adicionarImovel()">Adicionar</button>
+        
+        <section id="imoveis">
+            <h2>Imóveis Disponíveis</h2>
+            <div id="listaImoveis"></div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
