@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultor</title>
+    <link rel="stylesheet" href="stylesheet/consultor.css">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="imagens_consultor/imobiliarialogo.png" alt="Logo da Imobiliária original">
+            <h1>Imobiliária Colibri</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="consultor.html">Consultor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>
+            <label for="inTipo">Tipo: </label>
+            <input type="text" id="inTipo" required placeholder="Ex: Apartamento">
+        </p>
+        <p>
+            <label for="inAreaC">Área Construída (em m²): </label>
+            <input type="text" id="inAreaConstruida" required placeholder="Ex: 200">
+        </p>
+        <p>
+            <label for="inAreaTotal">Área Total (em m²): </label>
+            <input type="text" id="inAreaTotal" required placeholder="Ex: 200">
+        </p>
+        <p>
+            <label for="inEndereco">Endereço: </label>
+            <input type="text" id="inEndereco" required placeholder="Ex: Rua Elza Feres, 360">
+        </p>
+        <p>
+            <label for="inBairro">Bairro: </label>
+            <input type="text" id="inBairro" required placeholder="Ex: Vila Mariana">
+        </p>
+        <p>
+            <label for="inCidade">Cidade: </label>
+            <input type="text" id="inCidade" required placeholder="Ex: Sumaré">
+        </p>
+
+        <table id="tbSaida"></table>
+
+        <script src="DadosImobiliaria.js"></script>
+        <script src="consultor.js"></script>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
