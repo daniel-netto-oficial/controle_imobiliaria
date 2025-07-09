@@ -70,7 +70,7 @@ const btAdicionar = document.getElementById("btAdicionar");
 btAdicionar.addEventListener("click" , adicionarImovel);
 function adicionarImovel(){
     //Limpando a tabela
-    tbSaida.innerHTML = ""
+    tbSaida.innerHTML = "";
 
     var tipo = (inTipo.value);
     var areaC = (inAreaC.value);
