@@ -65,10 +65,12 @@ const inAreaT = document.getElementById("inAreaT");
 const inLogradouro = document.getElementById("inLogradouro");
 const inBairro = document.getElementById("inBairro");
 const inCidade = document.getElementById("inCidade");
-const btAdicionar = document.getElementById("btAdicionar");
+const formAdicionarImovel = document.getElementById("formAdicionarImovel");
 
-btAdicionar.addEventListener("click" , adicionarImovel);
-function adicionarImovel(){
+formAdicionarImovel.addEventListener("submit", adicionarImovel)
+function adicionarImovel(event) {
+    //Evita o recarregamento da página
+    event.preventDefault();
     //Limpando a tabela
     tbSaida.innerHTML = "";
 
@@ -139,4 +141,7 @@ function adicionarImovel(){
         tbody.append(trow);
     }
     tbSaida.append(tbody);
+
+    // Limpa os campos do formulário após adicionar
+    formAdicionarImovel.reset();
 }

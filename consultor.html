@@ -23,27 +23,29 @@
     </header>
 
     <main>
-        <section>
+        <form id="formAdicionarImovel" class="formularioAdImovel">
+            <h3 class="tituloAdFormulario">Adicionar um novo Imóvel</h3>
+
             <label for="inTipo">Tipo: </label>
-            <input type="text" id="inTipo" required placeholder="Ex: Apartamento">
+            <input type="text" id="inTipo" class="inputAdFormulario" required placeholder="Ex: Apartamento">
 
             <label for="inAreaC">Área Construída (em m²): </label>
-            <input type="text" id="inAreaC" required placeholder="Ex: 200">
+            <input type="number" id="inAreaC" class="inputAdFormulario" required placeholder="Ex: 200">
 
             <label for="inAreaT">Área Total (em m²): </label>
-            <input type="text" id="inAreaT" required placeholder="Ex: 200">
+            <input type="number" id="inAreaT" class="inputAdFormulario" required placeholder="Ex: 200">
 
             <label for="inLogradouro">Logradouro: </label>
-            <input type="text" id="inLogradouro" required placeholder="Ex: Rua Elza Feres, 360">
+            <input type="text" id="inLogradouro" class="inputAdFormulario" required placeholder="Ex: Rua Elza Feres, 360">
 
             <label for="inBairro">Bairro: </label>
-            <input type="text" id="inBairro" required placeholder="Ex: Vila Mariana">
+            <input type="text" id="inBairro" class="inputAdFormulario" required placeholder="Ex: Vila Mariana">
 
             <label for="inCidade">Cidade: </label>
-            <input type="text" id="inCidade" required placeholder="Ex: Sumaré">
+            <input type="text" id="inCidade" class="inputAdFormulario" required placeholder="Ex: Sumaré">
 
-            <button type="button" id="btAdicionar">Adicionar Imóvel</button>
-        </section>
+            <input type="submit" value="Adicionar Imóvel" class="botaoAdFormulario">
+        </form>
 
         <table id="tbSaida"></table>
 
@@ -51,7 +53,10 @@
         <script src="consultor.js"></script>
     </main>
 
-    <footer></footer>
+    <footer>
+        <img src="imagens_home/imobiliarialogopreta.png" alt="Logo da Imobiliária preta">
+        <p class="copyright">&copy;2025 - Imobiliária Colibri</p>
+    </footer>
 
 </body>
 
