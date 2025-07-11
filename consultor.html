@@ -36,7 +36,8 @@
             <input type="number" id="inAreaT" class="inputAdFormulario" required placeholder="Ex: 200">
 
             <label for="inLogradouro">Logradouro: </label>
-            <input type="text" id="inLogradouro" class="inputAdFormulario" required placeholder="Ex: Rua Elza Feres, 360">
+            <input type="text" id="inLogradouro" class="inputAdFormulario" required
+                placeholder="Ex: Rua Elza Feres, 360">
 
             <label for="inBairro">Bairro: </label>
             <input type="text" id="inBairro" class="inputAdFormulario" required placeholder="Ex: Vila Mariana">
@@ -47,7 +48,12 @@
             <input type="submit" value="Adicionar Imóvel" class="botaoAdFormulario">
         </form>
 
-        <table id="tbSaida"></table>
+        <section class="tabela">
+            <h1>Imóveis Disponíveis</h1>
+            <table id="tbSaida" class="tabelaAdImoveis"></table>
+        </section>
+
+
 
         <script src="DadosImobiliaria.js"></script>
         <script src="consultor.js"></script>

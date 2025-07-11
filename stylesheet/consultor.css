@@ -116,6 +116,56 @@ main {
     background-color: red;
 }
 
+/* Estilização Section da Tabela + H1 */
+.tabela {
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+/* Título da seção */
+.tabela h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+
+/* Estilização principal da tabela */
+.tabelaAdImoveis {
+    width: 90%;
+    max-width: 1500px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Estilização tHead da tabela*/
+.tabelaAdImoveis thead {
+    background-color: #333333;
+}
+
+.tabelaAdImoveis thead th {
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+
+/* Estilização tBody da tabela */
+.tabelaAdImoveis tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.tabelaAdImoveis td,
+.tabelaAdImoveis th {
+    border-right: 1px solid #333333;
+}
+
 /* FOOTER */
 
 footer {
