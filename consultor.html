@@ -23,34 +23,50 @@
     </header>
 
     <main>
-        <form id="formAdicionarImovel" class="formularioAdImovel">
-            <h3 class="tituloAdFormulario">Adicionar um novo Imóvel</h3>
+        <section class="formularios">
+            <!--Formulário de Adição imóveis-->
+            <form id="formAdicionarImovel" class="formularioAdImovel">
+                <h3 class="tituloAdFormulario">Adicionar um novo Imóvel</h3>
 
-            <label for="inTipo">Tipo: </label>
-            <input type="text" id="inTipo" class="inputAdFormulario" required placeholder="Ex: Apartamento">
+                <label for="inTipo">Tipo: </label>
+                <input type="text" id="inTipo" class="inputAdFormulario" required placeholder="Ex: Apartamento">
 
-            <label for="inAreaC">Área Construída (em m²): </label>
-            <input type="number" id="inAreaC" class="inputAdFormulario" required placeholder="Ex: 200">
+                <label for="inAreaC">Área Construída (em m²): </label>
+                <input type="number" id="inAreaC" class="inputAdFormulario" required placeholder="Ex: 200">
 
-            <label for="inAreaT">Área Total (em m²): </label>
-            <input type="number" id="inAreaT" class="inputAdFormulario" required placeholder="Ex: 200">
+                <label for="inAreaT">Área Total (em m²): </label>
+                <input type="number" id="inAreaT" class="inputAdFormulario" required placeholder="Ex: 200">
 
-            <label for="inLogradouro">Logradouro: </label>
-            <input type="text" id="inLogradouro" class="inputAdFormulario" required
-                placeholder="Ex: Rua Elza Feres, 360">
+                <label for="inLogradouro">Logradouro: </label>
+                <input type="text" id="inLogradouro" class="inputAdFormulario" required placeholder="Ex: Rua Elza Feres, 360">
 
-            <label for="inBairro">Bairro: </label>
-            <input type="text" id="inBairro" class="inputAdFormulario" required placeholder="Ex: Vila Mariana">
+                <label for="inBairro">Bairro: </label>
+                <input type="text" id="inBairro" class="inputAdFormulario" required placeholder="Ex: Vila Mariana">
 
-            <label for="inCidade">Cidade: </label>
-            <input type="text" id="inCidade" class="inputAdFormulario" required placeholder="Ex: Sumaré">
+                <label for="inCidade">Cidade: </label>
+                <input type="text" id="inCidade" class="inputAdFormulario" required placeholder="Ex: Sumaré">
 
-            <input type="submit" value="Adicionar Imóvel" class="botaoAdFormulario">
-        </form>
+                <input type="submit" value="Adicionar Imóvel" class="botaoAdFormulario">
+            </form>
+
+            <!--Formulário de busca de imóveis com base no tipo e cidade-->
+            <form id="formBuscaImoveis" class="buscarImoveis">
+                <h3 class="tituloBuscaFormulario">Buscar imóvel por tipo e cidade</h3>
+
+                <label for="inTipo1">Tipo: </label>
+                <input type="text" id="inTipo1" class="inputBuscaFormulario" required placeholder="Ex: Apartamento">
+
+                <label for="inCidade1">Cidade: </label>
+                <input type="text" id="inCidade1" class="inputBuscaFormulario" required placeholder="Ex: Suzano">
+
+                <input type="submit" value="Buscar Imóveis" class="botaoBuscaFormulario">
+            </form>
+        </section>
+
 
         <section class="tabela">
             <h1>Imóveis Disponíveis</h1>
-            <table id="tbSaida" class="tabelaAdImoveis"></table>
+            <table id="tbSaida" class="tabelaImoveis"></table>
         </section>
 
 

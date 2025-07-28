@@ -59,6 +59,9 @@ nav ul.menu li a:hover {
     border-bottom: 2px solid #f5c518;
 }
 
+
+
+
 /* MAIN */
 
 /* Estilização principal do Main */
@@ -68,16 +71,23 @@ main {
     color: white;
 }
 
+/* Estilização da section dos formulários */
+.formularios{
+    display: flex;
+}
+
+/*----------------------------------------------------------------------------------*/
+
 /* Estilização de todo o Formulário de Adicionar Imóveis */
 .formularioAdImovel {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    max-width: 400px;
+    max-width: 435px;
     gap: 13px;
     padding: 20px 25px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 /* Estilização do Título do formulário */
@@ -98,7 +108,7 @@ main {
     border-radius: 4px;
 }
 
-/* Estilização do botão de adicionar*/
+/* Estilização do botão de adicionar imóvel*/
 .botaoAdFormulario {
     width: 100%;
     margin-top: 10px;
@@ -116,6 +126,54 @@ main {
     background-color: red;
 }
 
+/*-----------------------------------------------------------------------------------*/
+
+.buscarImoveis{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 435px;
+    gap: 13px;
+    padding: 20px 25px;
+    margin-left: 50px;
+}
+
+.tituloBuscaFormulario{
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: rgb(241, 237, 237);
+}
+
+.inputBuscaFormulario{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.botaoBuscaFormulario{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botaoBuscaFormulario:hover{
+    background-color: red;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
 /* Estilização Section da Tabela + H1 */
 .tabela {
   margin-top: 100px;
@@ -132,7 +190,7 @@ main {
 
 
 /* Estilização principal da tabela */
-.tabelaAdImoveis {
+.tabelaImoveis {
     width: 90%;
     max-width: 1500px;
     margin: 40px auto;
@@ -144,11 +202,11 @@ main {
 }
 
 /* Estilização tHead da tabela*/
-.tabelaAdImoveis thead {
+.tabelaImoveis thead {
     background-color: #333333;
 }
 
-.tabelaAdImoveis thead th {
+.tabelaImoveis thead th {
     padding: 14px 20px;
     text-align: center;
     font-weight: bold;
@@ -156,15 +214,18 @@ main {
 }
 
 /* Estilização tBody da tabela */
-.tabelaAdImoveis tbody td {
+.tabelaImoveis tbody td {
     padding: 14px 20px;
     border-bottom: 1px solid #2a2a2a;
 }
 
-.tabelaAdImoveis td,
-.tabelaAdImoveis th {
+.tabelaImoveis td,
+.tabelaImoveis th {
     border-right: 1px solid #333333;
 }
+
+/*----------------------------------------------------------------------------------*/
+
 
 /* FOOTER */
 
