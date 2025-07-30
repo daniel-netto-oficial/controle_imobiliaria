@@ -72,13 +72,12 @@ main {
 }
 
 /* Estilização da section dos formulários */
-.formularios{
+.formularios {
     display: flex;
 }
 
 /*----------------------------------------------------------------------------------*/
-
-/* Estilização de todo o Formulário de Adicionar Imóveis */
+/* Estilização do Formulário de Adicionar Imóveis */
 .formularioAdImovel {
     display: flex;
     flex-direction: column;
@@ -90,7 +89,6 @@ main {
     margin-left: 30px;
 }
 
-/* Estilização do Título do formulário */
 .tituloAdFormulario {
     text-align: center;
     text-transform: uppercase;
@@ -100,7 +98,6 @@ main {
     color: rgb(241, 237, 237);
 }
 
-/* Estilização dos campos de input*/
 .inputAdFormulario {
     width: 100%;
     padding: 8px;
@@ -108,7 +105,6 @@ main {
     border-radius: 4px;
 }
 
-/* Estilização do botão de adicionar imóvel*/
 .botaoAdFormulario {
     width: 100%;
     margin-top: 10px;
@@ -127,18 +123,18 @@ main {
 }
 
 /*-----------------------------------------------------------------------------------*/
-
-.buscarImoveis{
+/* Estilização do formulário de busca por tipo e cidade */
+.formularioBuscarImoveis {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 435px;
     gap: 13px;
     padding: 20px 25px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
-.tituloBuscaFormulario{
+.tituloBuscaFormulario {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -147,14 +143,14 @@ main {
     color: rgb(241, 237, 237);
 }
 
-.inputBuscaFormulario{
+.inputBuscaFormulario {
     width: 100%;
     padding: 8px;
     border: 1px solid #ffffff;
     border-radius: 4px;
 }
 
-.botaoBuscaFormulario{
+.botaoBuscaFormulario {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -167,25 +163,69 @@ main {
     transition: background-color 0.3s;
 }
 
-.botaoBuscaFormulario:hover{
+.botaoBuscaFormulario:hover {
     background-color: red;
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* Estilização do formulário de filtros */
+.formularioFiltroImoveis {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 435px;
+    gap: 13px;
+    padding: 20px 25px;
+    margin-left: 20px;
+}
 
+.tituloFormFiltro {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: rgb(241, 237, 237);
+}
 
+.inputFormFiltro {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.botaoFormFiltro {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botaoFormFiltro:hover {
+    background-color: red;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Estilização da tabela de saída */
 /* Estilização Section da Tabela + H1 */
 .tabela {
-  margin-top: 100px;
-  text-align: center;
-  padding-bottom: 1px;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 1px;
 }
 
 /* Título da seção */
 .tabela h1 {
-  font-size: 35px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 

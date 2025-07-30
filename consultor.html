@@ -32,10 +32,10 @@
                 <input type="text" id="inTipo" class="inputAdFormulario" required placeholder="Ex: Apartamento">
 
                 <label for="inAreaC">Área Construída (em m²): </label>
-                <input type="number" id="inAreaC" class="inputAdFormulario" required placeholder="Ex: 200">
+                <input type="number" id="inAreaC" class="inputAdFormulario" placeholder="Ex: 200">
 
                 <label for="inAreaT">Área Total (em m²): </label>
-                <input type="number" id="inAreaT" class="inputAdFormulario" required placeholder="Ex: 200">
+                <input type="number" id="inAreaT" class="inputAdFormulario" placeholder="Ex: 200">
 
                 <label for="inLogradouro">Logradouro: </label>
                 <input type="text" id="inLogradouro" class="inputAdFormulario" required placeholder="Ex: Rua Elza Feres, 360">
@@ -50,7 +50,7 @@
             </form>
 
             <!--Formulário de busca de imóveis com base no tipo e cidade-->
-            <form id="formBuscaImoveis" class="buscarImoveis">
+            <form id="formBuscaImoveis" class="formularioBuscarImoveis">
                 <h3 class="tituloBuscaFormulario">Buscar imóvel por tipo e cidade</h3>
 
                 <label for="inTipo1">Tipo: </label>
@@ -60,6 +60,25 @@
                 <input type="text" id="inCidade1" class="inputBuscaFormulario" required placeholder="Ex: Suzano">
 
                 <input type="submit" value="Buscar Imóveis" class="botaoBuscaFormulario">
+            </form>
+
+            <!--Formulário para filtrar imóveis com base no tipo ou cidade ou área construída-->
+            <form id="formFiltroImoveis" class="formularioFiltroImoveis">
+                <h3 class="tituloFormFiltro">Filtar Imóvel por: </h3>
+
+                <label for="inTipo2">Tipo: </label>
+                <input type="text" id="inTipo2" class="inputFormFiltro" placeholder="Ex: Apartamento">
+
+                <label for="inCidade2">Cidade: </label>
+                <input type="text" id="inCidade2" class="inputFormFiltro" placeholder="Ex: Suzano">
+
+                <label for="inAreaMin">Área Construída miníma (em m²): </label>
+                <input type="number" id="inAreaMin" class="inputFormFiltro" placeholder="Ex: 200">
+
+                <label for="inAreaMax">Área Construída máxima (em m²): </label>
+                <input type="number" id="inAreaMax" class="inputFormFiltro" placeholder="Ex: 200">
+
+                <input type="submit" value="Filtrar" class="botaoFormFiltro">
             </form>
         </section>
 
