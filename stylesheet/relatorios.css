@@ -1,0 +1,202 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* HEADER */
+header {
+    background-color: #38383a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+  
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+  
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.logo img {
+    height: 260px;
+    width: auto;
+    display: block;
+}
+  
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-right: 200px;
+}
+  
+nav ul.menu li a {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+  
+  nav ul.menu li a:hover {
+    border-bottom: 2px solid #f5c518;
+}
+
+/* MAIN */
+main {
+    background: linear-gradient(#38383a, black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+
+/* Estilização da Section dos Relatórios */
+.relatorios{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilização do texto sobre a Aba de Relatórios */
+.textoRelatorio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: justify;
+  line-height: 1.8;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.textoRelatorio h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.textoRelatorio p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: white;
+}
+
+/* Estilização do Formulário que gera o Relário de tipos de imóveis */
+.formRelatorioTipo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 435px;
+    gap: 13px;
+    padding: 20px 25px;
+    margin-left: 400px;
+}
+
+.tituloRelatorioTipo {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: rgb(241, 237, 237);
+}
+
+.botaoRelatorioTipo {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botaoRelatorioTipo:hover {
+    background-color: red;
+}
+
+/* Estilização das tabelas */
+
+.tabelas {
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+
+/* Estilização principal da tabela */
+.tabelaRelatorioTipo {
+    width: 90%;
+    max-width: 1600px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Estilização tHead da tabela*/
+.tabelaRelatorioTipo thead {
+    background-color: #333333;
+}
+
+.tabelaRelatorioTipo thead th {
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+
+/* Estilização tBody da tabela */
+.tabelaRelatorioTipo tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.tabelaRelatorioTipo td,
+.tabelaRelatorioTipo th {
+    border-right: 1px solid #333333;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+footer .copyright {
+    color: white;
+    font-size: 20px;
+}
