@@ -65,6 +65,15 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.imgHome {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
 /* TEXTO SOBRE A IMOBILIÁRIA */
 .sobre {
   max-width: 800px;
@@ -204,4 +213,3 @@ footer .copyright {
   color: white;
   font-size: 20px;
 }
-
