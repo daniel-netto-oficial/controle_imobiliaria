@@ -75,7 +75,7 @@ main {
 
 /* Estilização do texto sobre a Aba de Relatórios */
 .textoRelatorio {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: justify;
@@ -98,7 +98,7 @@ main {
   color: white;
 }
 
-/* Estilização do Formulário que gera o Relário de tipos de imóveis */
+/* Estilização do Formulário que gera o Relatório de tipos de imóveis */
 .formRelatorioTipo {
     display: flex;
     flex-direction: column;
@@ -108,6 +108,7 @@ main {
     gap: 13px;
     padding: 20px 25px;
     margin-left: 400px;
+    padding-top: 45px;
 }
 
 .tituloRelatorioTipo {
@@ -136,10 +137,47 @@ main {
     background-color: red;
 }
 
+/* Estilização do Formulário de imóveis com maior área construída por tipo */
+.formRelatorioArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 435px;
+    gap: 13px;
+    padding: 20px 25px;
+    margin-left: 200px;
+}
+.tituloRelatorioArea{
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: rgb(241, 237, 237);
+}
+
+.botaoRelatorioArea{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botaoRelatorioArea:hover {
+    background-color: red;
+}
+
+
 /* Estilização das tabelas */
 
 .tabelas {
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
     padding-bottom: 1px;
 }
