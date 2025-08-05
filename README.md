@@ -1,0 +1,2 @@
+Trabalho interdisciplinar desenvolvido no primeiro período do curso Tecnólogo em Sistemas para Internet.
+Esse trabalho teve como objetivo desenvolver um website de uma imobiliária fictícia onde nos foi dada a missão de desenvolver algumas funções, tais como filtros, botões de adição de elementos em vetores e geração de relatórios, utilizamos de elementos HTML, linguagem javascript e css para estilização geral.
